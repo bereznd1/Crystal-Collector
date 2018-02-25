@@ -16,7 +16,7 @@ $(document).ready(function () {
 
         //put random goal number into the page
         goalNumber = Math.floor(Math.random() * 120) + 19;
-        $("#random-number").text(goalNumber);
+        $("#random-number").html(goalNumber);
 
         //display the wins & losses
         $("#wins").html(wins);
