@@ -1,50 +1,70 @@
 $(document).ready(function () {
 
+    //defining global variables
     var wins = 0;
     var losses = 0;
-    var currentPoints = 0;
-    var goalNumber = Math.floor(Math.random() * 120) + 19;
-   // var crystalNumber = Math.floor(Math.random() * 12) + 1;
+    var currentPoints;
+    var goalNumber;
 
-    function loadRandomNumbers (goalNumber) {
+
+    //this function sets up the game to begin playing
+    function initialize() {
+
+        //display the starting score
+        currentPoints = 0;
+        $("#display-total-score").html(currentPoints);
 
         //put random goal number into the page
-    $("#random-number").text(goalNumber);
+        goalNumber = Math.floor(Math.random() * 120) + 19;
+        $("#random-number").text(goalNumber);
 
-    //get all of the crystals and assign them a random value
-    var getCrystal1 = $("#crystal1");
-    var crystalNumber = Math.floor(Math.random() * 12) + 1;
-    getCrystal1.attr("value", crystalNumber);
+        //display the wins & losses
+        $("#wins").html(wins);
+        $("#losses").html(losses);
 
-    var getCrystal2 = $("#crystal2");
-    var crystalNumber = Math.floor(Math.random() * 12) + 1;
-    getCrystal2.attr("value", crystalNumber);
+        //get all of the crystals and assign them a random value
+        var getCrystal1 = $("#crystal1");
+        var crystalNumber = Math.floor(Math.random() * 12) + 1;
+        getCrystal1.attr("value", crystalNumber);
 
-    var getCrystal3 = $("#crystal3");
-    var crystalNumber = Math.floor(Math.random() * 12) + 1;
-    getCrystal3.attr("value", crystalNumber);
+        var getCrystal2 = $("#crystal2");
+        var crystalNumber = Math.floor(Math.random() * 12) + 1;
+        getCrystal2.attr("value", crystalNumber);
 
-    var getCrystal4 = $("#crystal4");
-    var crystalNumber = Math.floor(Math.random() * 12) + 1;
-    getCrystal4.attr("value", crystalNumber);
+        var getCrystal3 = $("#crystal3");
+        var crystalNumber = Math.floor(Math.random() * 12) + 1;
+        getCrystal3.attr("value", crystalNumber);
+
+        var getCrystal4 = $("#crystal4");
+        var crystalNumber = Math.floor(Math.random() * 12) + 1;
+        getCrystal4.attr("value", crystalNumber);
 
     }
 
-    loadRandomNumbers(goalNumber);
+    //run the initialize function, thus starting off the game
+    initialize();
 
-
-   // for (var i = 0; i < letters.length; i++) {
-
-
-  //  }
-
+    //when any of the crystal images is clicked, get the value of the specific crystal that was clicked, add it to the current score, & display that score
     $(".crystals").on("click", function () {
-        
+
         var crystalValue = $(this).attr("value");
         crystalValue = parseInt(crystalValue);
         currentPoints += crystalValue;
-        $("#total-score").html(currentPoints);
+        $("#display-total-score").html(currentPoints);
 
+
+        //if the current score matches the goal number, add a point to wins & restart the game
+        if (currentPoints === goalNumber) {
+            wins++;
+            initialize();
+        }
+
+        //if the current score is greater than the goal number, add a point to losses & restart the game
+        else if (currentPoints > goalNumber) {
+            losses++;
+            initialize();
+        }
     });
+
 
 });

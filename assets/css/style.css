@@ -1,5 +1,23 @@
 html {
     font-family: 'Roboto', sans-serif;
+    background-image: url('../images/backgroundtext2.jpg');
+}
+
+#all-content {
+    width: 600px;
+    height: 91.6vh;
+    border-radius: 20px;
+    margin: 0 auto;
+    background-color: #7fe1ef;
+    padding: 20px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: #000000;
+
+
+    -webkit-box-shadow: 6px 5px 42px 21px rgba(0,0,0,0.75);
+    -moz-box-shadow: 6px 5px 42px 21px rgba(0,0,0,0.75);
+    box-shadow: 6px 5px 42px 21px rgba(0,0,0,0.75);
 }
 
 header {
@@ -13,45 +31,77 @@ main {
 }
 
 #instructions {
-    width: 400px;
+    width: 460px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #42c2f4;
-    border-style: dashed;
+    font-size: 14px;
+    font-weight: 900;
+    background-color: #5ec6ff;
+    border-style: solid;
     border-width: 4px;
+    border-radius: 30px;
 
 }
 
 #random-number {
-    width: 200px;
+    width: 160px;
+    padding: 20px;
+    background-color: #f2e448;
     border-style: solid;
-    border-width: 1px;
+    border-width: 4px;
+    border-radius: 20px;
     display: inline-block;
+    font-size: 40px;
 }
 
 #wins-losses {
-    width: 200px;
+    width: 160px;
+    padding: 20px;
+    background-color: #55e093;
     border-style: solid;
-    border-width: 1px;
+    border-width: 4px;
+    border-radius: 20px;
     display: inline-block;
+    font-size: 20px;
 }
 
 
-.crystal-container {
-
+.crystals {
+    width: 70px;
+    margin-right: 20px;
 }
 
 
-#totalscore-caption {
-    width: 200px;
-    margin: 0 auto;
-    border-style: solid;
-    border-width: 1px;
+.crystals:hover {
+    cursor: pointer;
+    
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+
 }
+
 
 #total-score {
-    width: 200px;
+    width: 130px;
+    padding: 15px;
+    background-color: #ff5e5e;
     margin: 0 auto;
     border-style: solid;
-    border-width: 1px;
+    border-width: 4px;
+    border-radius: 20px;
 }
+
+#totalscore-caption {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+
+}
+
+#display-total-score {
+    font-size: 30px;
+    text-align: center;
+}
+
