@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,91 +26,88 @@
 
     <div id="all-content">
 
-    <header>
-        <img id="title" src="assets/images/crystalheader.png">
-    </header>
-
-    <br>
-
-    <main>
-        <div id="instructions">
-            <p>You will be given a random number at the start of the game.</p>
-
-            <p>There are 4 crystals below. By clicking on a crystal, you will add a specific amount of points to your total score.</p>
-
-            <p>You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.</p>
-
-            <p>The value of each crystal is hidden from you until you click on it.</p>
-
-            <p>Each time when the game starts, the game will change the values of each crystal.</p>
-        </div>
+        <header>
+            <img id="title" src="assets/images/crystalheader.png">
+        </header>
 
         <br>
 
-    <center>
-        
-        <div id="random-number">
-                
-        </div>
+        <main>
+            <div id="instructions">
+                <p>You will be given a random number at the start of the game.</p>
 
-        <div id="wins-losses">
-            <strong>Wins:</strong>
-            <span id="wins">
+                <p>There are 4 crystals below. By clicking on a crystal, you will add a specific amount of points to your total
+                    score.</p>
 
-            </span>
+                <p>You win the game by matching your total score to the random number. You lose the game if your total score
+                    goes above the random number.</p>
+
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+
+                <p>Each time when the game starts, the game will change the values of each crystal.</p>
+            </div>
 
             <br>
 
-            <strong>Losses:</strong>
-            <span id="losses">
+            <center>
+                <!--where the goal number will go upon page load -->
+                <div id="random-number">
 
-            </span>
-        </div>
-        
-    </center>
+                </div>
 
-        <br>
+                <!--where the wins & losses will be recorded-->
+                <div id="wins-losses">
+                    <strong>Wins:</strong>
+                    <span id="wins">
 
+                    </span>
 
-        <center>
+                    <br>
 
-        <span class="crystal-container">
-            <img class="crystals" id="crystal1" src="assets/images/crystal1.png">
+                    <strong>Losses:</strong>
+                    <span id="losses">
 
-            <img  class="crystals" id="crystal2" src="assets/images/crystal2.png">
+                    </span>
+                </div>
 
+            </center>
 
-            <img  class="crystals" id="crystal3"src="assets/images/crystal3.png">
-
-            <img  class="crystals" id="crystal4" src="assets/images/crystal4.png">
-        </span>
-
-        </center>
-
-        <br>
+            <br>
 
 
+            <center>
+                <!--the actual crystal images-->
+                <span class="crystal-container">
+                    <img class="crystals" id="crystal1" src="assets/images/crystal1.png">
 
+                    <img class="crystals" id="crystal2" src="assets/images/crystal2.png">
 
+                    <img class="crystals" id="crystal3" src="assets/images/crystal3.png">
 
-        <div id="total-score">
+                    <img class="crystals" id="crystal4" src="assets/images/crystal4.png">
+                </span>
+
+            </center>
+
+            <br>
+
+            <!--where the total user score will go -->
+            <div id="total-score">
 
                 <div id="totalscore-caption">
-                        Total Score:
-                    </div>
+                    Total Score:
+                </div>
 
-                    <div id="display-total-score">
+                <div id="display-total-score">
 
-                    </div>
+                </div>
 
-        </div>
-    </main>
+            </div>
+        </main>
+
+    </div>
 
 
-</div>
 
-    
-    
 </body>
-
 </html>
