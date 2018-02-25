@@ -39,7 +39,7 @@ $(document).ready(function () {
         var crystalNumber = Math.floor(Math.random() * 12) + 1;
         getCrystal4.attr("value", crystalNumber);
 
-    }
+    }     
 
     //run the initialize function, thus starting off the game
     initialize();
