@@ -41,6 +41,10 @@ main {
     border-width: 4px;
     border-radius: 30px;
 
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+
 }
 
 #random-number {
@@ -52,6 +56,10 @@ main {
     border-radius: 20px;
     display: inline-block;
     font-size: 40px;
+
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
 }
 
 #wins-losses {
@@ -63,21 +71,27 @@ main {
     border-radius: 20px;
     display: inline-block;
     font-size: 20px;
+
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
 }
 
 
 .crystals {
     width: 70px;
     margin-right: 20px;
+    transition: all .2s ease-in;
 }
 
 
 .crystals:hover {
     cursor: pointer;
+    transform:translate(0px, -5px);
     
-    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+   /* -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);  */
 
 }
 
@@ -90,6 +104,10 @@ main {
     border-style: solid;
     border-width: 4px;
     border-radius: 20px;
+
+    -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.75);
 }
 
 #totalscore-caption {
