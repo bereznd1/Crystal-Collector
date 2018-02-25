@@ -15,7 +15,7 @@ $(document).ready(function () {
         $("#display-total-score").html(currentPoints);
 
         //put random goal number into the page
-        goalNumber = Math.floor(Math.random() * 120) + 19;
+        goalNumber = Math.floor(Math.random() * 100) + 19;
         $("#random-number").html(goalNumber);
 
         //display the wins & losses
@@ -56,12 +56,14 @@ $(document).ready(function () {
         //if the current score matches the goal number, add a point to wins & restart the game
         if (currentPoints === goalNumber) {
             wins++;
+            $("#message").html("<strong>You won!</strong>");
             initialize();
         }
 
         //if the current score is greater than the goal number, add a point to losses & restart the game
         else if (currentPoints > goalNumber) {
             losses++;
+            $("#message").html("<strong>You lost!</strong>");
             initialize();
         }
     });
