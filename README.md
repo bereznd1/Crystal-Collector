@@ -3,7 +3,7 @@
 
 ![Crystal Collector Game](assets/images/crystal_collector_game.png)
 
- [View Live!](https://bereznd1.github.io/week-4-game/) 
+ [View Live!](https://bereznd1.github.io/Crystal-Collector/) 
 
 
 ## Brief Description
